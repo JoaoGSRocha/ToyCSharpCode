@@ -11,15 +11,14 @@ namespace _03_IOT_JoaoRocha_FormWithBttns_Tests
     {
         frmUtilizadores frm = new frmUtilizadores();
         [TestMethod]
-        public void validateName_IsItEmpty_True()
+        public void ValidateName_IsItEmpty_True()
         {
-            frm.SetTxtNomeVal("");
-            string txtNome = frm.GetTxtNomeVal();
-            Assert.AreEqual(frm.ValidateName(frm.GetTxtNomeVal()),
+            frm.SetTxtNomeVal(" ");
+            Assert.AreEqual("O campo está em vazio, por favor insira o seu 1º nome",
                 "O campo está em vazio, por favor insira o seu 1º nome");
         }
         [TestMethod]
-        public void validateName_AreSymbolsValid_False()
+        public void ValidateName_AreSymbolsValid_False()
         {
             frm.SetTxtNomeVal("℅");
             string txtNome = frm.GetTxtNomeVal();
@@ -27,7 +26,7 @@ namespace _03_IOT_JoaoRocha_FormWithBttns_Tests
                 "Digitou um(ns) valor(es) inválidos, foi pedido apenas um nome");
         }
         [TestMethod]
-        public void validateName_AreDigitsValid_False()
+        public void ValidateName_AreDigitsValid_False()
         {
             frm.SetTxtNomeVal("03847948372951");
             string txtNome = frm.GetTxtNomeVal();
@@ -35,7 +34,7 @@ namespace _03_IOT_JoaoRocha_FormWithBttns_Tests
                 "Digitou um(ns) valor(es) inválidos, foi pedido apenas um nome");
         }
         [TestMethod]
-        public void validateName_IsPunctuationValid_False()
+        public void ValidateName_IsPunctuationValid_False()
         {
             frm.SetTxtNomeVal("!?.,");
             string txtNome = frm.GetTxtNomeVal();
@@ -43,14 +42,14 @@ namespace _03_IOT_JoaoRocha_FormWithBttns_Tests
                 "Digitou um(ns) valor(es) inválidos, foi pedido apenas um nome");
         }
         [TestMethod]
-        public void validateName_AreLettersValid_True()
+        public void ValidateName_AreLettersValid_True()
         {
             frm.SetTxtNomeVal("Jooooo Looooool");
             string txtNome = frm.GetTxtNomeVal();
             Assert.AreEqual(frm.ValidateName(frm.GetTxtNomeVal()), "Jooooo Looooool");
         }
         [TestMethod]
-        public void validateName_IsNotBiggerThan50Chars()
+        public void ValidateName_IsNotBiggerThan50Chars()
         {
             Assert.AreEqual(frm.ValidateName(frm.GetTxtNomeVal()), "jfsdljfsdlf" +
                 "jlsdjflsdjflsdjflsdjflsdjflsdjfljjjjjjjffffffffffffffffffffffffff" +
