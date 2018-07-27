@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_IOT_JoaoRocha_FormWithBttns", "03_IOT_JoaoRocha_FormWithBttns\03_IOT_JoaoRocha_FormWithBttns.csproj", "{55FB44FD-69AA-45E8-B0F7-6DBAF0FDED9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_IOT_JoaoRocha_FormWithBttns_Tests", "03_IOT_JoaoRocha_FormWithBttns_Tests\03_IOT_JoaoRocha_FormWithBttns_Tests.csproj", "{C3FACA3F-EF0A-4332-BC5F-46ECA7EEF01E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55FB44FD-69AA-45E8-B0F7-6DBAF0FDED9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FB44FD-69AA-45E8-B0F7-6DBAF0FDED9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FB44FD-69AA-45E8-B0F7-6DBAF0FDED9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FB44FD-69AA-45E8-B0F7-6DBAF0FDED9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3FACA3F-EF0A-4332-BC5F-46ECA7EEF01E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3FACA3F-EF0A-4332-BC5F-46ECA7EEF01E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3FACA3F-EF0A-4332-BC5F-46ECA7EEF01E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3FACA3F-EF0A-4332-BC5F-46ECA7EEF01E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEEAF762-7567-4B67-806B-1D7AB908363C}
+	EndGlobalSection
+EndGlobal
