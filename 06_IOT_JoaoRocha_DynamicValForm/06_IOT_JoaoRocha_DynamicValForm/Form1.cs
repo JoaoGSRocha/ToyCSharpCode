@@ -91,5 +91,27 @@ namespace _06_IOT_JoaoRocha_DynamicValForm
         {
 
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            textBox7.Text = "";
+            textBox8.Text = "";
+            textBox9.Text = "";
+
+            lbl01Val.Text = "...";
+            lbl03Val.Text = "..ABC";
+            lbl04Val.Text = "...abc";
+            lbl05Val.Text = "0 €";
+            lbl06Val.Text = "0";
+            lbl07Val.Text = "0";
+            lbl08Val.Text = "0";
+            lbl09Val.Text = "...";
+        }
     }
 }

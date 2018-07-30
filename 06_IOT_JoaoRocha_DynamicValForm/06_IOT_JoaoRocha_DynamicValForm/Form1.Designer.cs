@@ -55,6 +55,7 @@ namespace _06_IOT_JoaoRocha_DynamicValForm
             this.lbl07Val = new System.Windows.Forms.Label();
             this.lbl08Val = new System.Windows.Forms.Label();
             this.lbl09Val = new System.Windows.Forms.Label();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -293,11 +294,22 @@ namespace _06_IOT_JoaoRocha_DynamicValForm
             this.lbl09Val.TabIndex = 26;
             this.lbl09Val.Text = "...";
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(200, 330);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 27;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 442);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.lbl09Val);
             this.Controls.Add(this.lbl08Val);
             this.Controls.Add(this.lbl07Val);
@@ -361,6 +373,7 @@ namespace _06_IOT_JoaoRocha_DynamicValForm
         private System.Windows.Forms.Label lbl08Val;
         private System.Windows.Forms.Label lbl09Val;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }
 
