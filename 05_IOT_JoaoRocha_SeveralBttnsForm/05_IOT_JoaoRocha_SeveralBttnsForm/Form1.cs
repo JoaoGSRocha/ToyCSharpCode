@@ -44,12 +44,6 @@ namespace _05_IOT_JoaoRocha_SeveralBttnsForm
 
         private void btnSair_Click_1(object sender, EventArgs e)
         {
-            DialogResult resposta;
-            resposta = MessageBox.Show("Deseja sair da Aplicação?",
-                "Fechar a Aplicação", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-
-            if (resposta == DialogResult.OK)
-                Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,8 +52,16 @@ namespace _05_IOT_JoaoRocha_SeveralBttnsForm
             resposta = MessageBox.Show("Deseja sair da Aplicação?",
                 "Fechar a Aplicação", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
 
-            if (resposta == DialogResult.OK)
+            if (IsRespostaOK(resposta))
                 Application.Exit();
+        }
+
+        public bool IsRespostaOK(DialogResult resposta)
+        {
+            if (resposta.Equals(DialogResult.OK))
+                return true;
+            else
+                return false;
         }
     }
 }
