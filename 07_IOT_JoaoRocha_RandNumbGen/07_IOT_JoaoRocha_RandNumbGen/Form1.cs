@@ -19,8 +19,28 @@ namespace _07_IOT_JoaoRocha_RandNumbGen
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            int randResult = GenerateRandNumb();
+            lblPoints.Text = randResult.ToString();
+
+            lblPoints.ForeColor = (IsNumbPair(randResult))
+             ? System.Drawing.Color.Red : System.Drawing.Color.Black;
+        }
+
+        private void lblPoints_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private int GenerateRandNumb()
+        {
             Random random = new Random();
-            lblGenVal.Text = random.Next(0, 100).ToString();
+            return  random.Next(0, 200);
+        }
+
+        private bool IsNumbPair(int n)
+        {
+            return (n % 2 == 0) ? true : false;
         }
     }
 }

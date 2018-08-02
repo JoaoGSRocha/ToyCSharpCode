@@ -72,5 +72,10 @@ namespace _08_IOT_JoaoRocha_FormCharsValidation
             else
                 return false;
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

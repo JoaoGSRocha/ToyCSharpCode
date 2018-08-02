@@ -30,6 +30,7 @@ namespace _07_IOT_JoaoRocha_RandNumbGen
         {
             this.btnGen = new System.Windows.Forms.Button();
             this.lblGenVal = new System.Windows.Forms.Label();
+            this.lblPoints = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGen
@@ -50,11 +51,24 @@ namespace _07_IOT_JoaoRocha_RandNumbGen
             this.lblGenVal.Size = new System.Drawing.Size(0, 13);
             this.lblGenVal.TabIndex = 1;
             // 
+            // lblPoints
+            // 
+            this.lblPoints.AutoSize = true;
+            this.lblPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoints.ForeColor = System.Drawing.Color.Red;
+            this.lblPoints.Location = new System.Drawing.Point(121, 4);
+            this.lblPoints.Name = "lblPoints";
+            this.lblPoints.Size = new System.Drawing.Size(100, 63);
+            this.lblPoints.TabIndex = 2;
+            this.lblPoints.Text = ". . .";
+            this.lblPoints.Click += new System.EventHandler(this.lblPoints_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(150, 84);
+            this.ClientSize = new System.Drawing.Size(235, 84);
+            this.Controls.Add(this.lblPoints);
             this.Controls.Add(this.lblGenVal);
             this.Controls.Add(this.btnGen);
             this.Name = "Form1";
@@ -68,6 +82,7 @@ namespace _07_IOT_JoaoRocha_RandNumbGen
 
         private System.Windows.Forms.Button btnGen;
         private System.Windows.Forms.Label lblGenVal;
+        private System.Windows.Forms.Label lblPoints;
     }
 }
 

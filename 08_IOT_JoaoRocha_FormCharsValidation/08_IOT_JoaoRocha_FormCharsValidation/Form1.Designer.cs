@@ -47,6 +47,7 @@ namespace _08_IOT_JoaoRocha_FormCharsValidation
             this.btnFechar.TabIndex = 0;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // lblNome
             // 
